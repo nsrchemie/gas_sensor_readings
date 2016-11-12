@@ -4,5 +4,5 @@
 
 (defn -main []
 	(def raw (slurp (as-url "http://10.0.0.240:8080")))
-			(prn (re-seq #"[1-9][0-9]*|0" raw))
+			(prn (take 10 (re-seq #"[1-9][0-9]*|0" raw)), (drop 10 (re-seq #"[1-9][0-9]*|0" raw)))
 			)
