@@ -4,5 +4,6 @@
 
 (defn -main []
 	(def raw (slurp (as-url "http://10.0.0.240:8080")))
-			(prn (map (fn[x] (Integer/parseInt x)) (take 10 (re-seq #"[1-9][0-9]*|0" raw))))
+			(def cleaned_sequences (map (fn[x] (Integer/parseInt x)) (re-seq #"[1-9][0-9]*|0" raw)))
+			(prn (take 10 cleaned_sequences))
 			)
