@@ -13,7 +13,7 @@
 
 
 			(def chart 
-				(c/xy-chart {"gas Concentration fluctuations" 
+				(c/xy-chart {"PPM vs Time" 
 					[(drop (/ (count cleaned_sequences) 2) cleaned_sequences) (take (/ (count cleaned_sequences) 2) cleaned_sequences) ]}))
 			
 			(c/view chart)
