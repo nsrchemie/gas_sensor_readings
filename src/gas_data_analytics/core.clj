@@ -14,5 +14,5 @@
 ; (defstruct xyp :x :y :stroke)
 ; (doseq [[time sensor] ((fn[x] (map vector (range) x)) (take 10 cleaned_sequences))] (println (struct xyp time sensor "a")))
 (doseq [[time sensor] ((fn[x] (map vector (range) x)) 
-(take 10 cleaned_sequences))] (println "Time: " time, "  ADC: ", sensor))
+(take 13 cleaned_sequences))] (println "Time: " time, "  ADC: ", sensor))
 			)
